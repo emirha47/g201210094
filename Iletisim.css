@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-family: 'Roboto', sans-serif;
+}
+
+nav {
+background: rgba(88, 238, 200, 0.685) ;
+height: 60px;
+width: 100%;
+}
+label.logo {
+    color: white;
+    font-size: 18px;
+    line-height: 80px;
+   
+    font-weight: 800;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px 12px;
+    text-transform: uppercase ;
+}
+
+a.active, a:hover {
+    background-color:rgb(255, 102, 0); 
+    color: black;
+    opacity: 0.5;
+}
+
+body
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    background:rgba(88, 238, 200, 0.685);
+    height: 60px;
+
+}
+
+
+.container-fluid li a:hover
+{
+    background-color:black; 
+    color: black;
+    opacity: 0.5;
+}
+
+.iletisim {
+    background: rgba(243, 99, 55, 0.685);
+    height: 115vh;
+}
+
+.sosyal{
+    background: rgba(88, 238, 200, 0.685) ;
+}
+@media screen and (min-width:950px)
+{
+
+table 
+{
+    opacity: 0.8;
+    margin-top: 50px;
+    margin-left: 300px;
+    font-size: 25px;
+    color: black;
+}
+.ustmenu
+{
+    margin-top: 10;
+    margin-left: 10;
+}
+.ustmenu ul
+{
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+}
+.ustmenu li 
+{
+    float: left;
+}
+.ustmenu li a 
+{
+    display: block;
+    padding:12px 16px;
+    color:hsl(182, 58%, 52%);
+    text-decoration:none; 
+    opacity: 0.7;
+}
+.ustmenu li a:hover
+{
+     color: hsl(182, 58%, 52%);
+}
+td
+{
+    text-align: left;
+    padding: 3 3 3 3;
+}
+
+.sosyal > a > img
+{
+   
+    float: left;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+p
+{
+    color: black;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-left: 300px;
+}
+}
+@media screen and (max-width:700px)
+{
+    .iletisim {
+        background: rgba(243, 99, 55, 0.685);
+        height: 115vh;
+        
+    }
+     table 
+    {
+    opacity: 0.8;
+    margin:auto;
+    margin-left: 10%;
+    font-size: 20px;
+    color: hsl(182, 58%, 52%);
+    }
+    ul
+    {
+        list-style-type: none;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    li a 
+    {
+        display: block;
+        padding:12px 16px;
+        color:hsl(182, 58%, 52%);
+        text-decoration:none; 
+    }
+    li a:hover
+    {
+        background-color:hsl(182, 58%, 52%); 
+        color: black;
+        opacity: 0.5;
+    }
+    
+    
+    td
+    {
+    text-align: left;
+    padding: 3 3 3 3;
+    }
+    p
+    {
+        color: hsl(182, 58%, 52%);
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+}

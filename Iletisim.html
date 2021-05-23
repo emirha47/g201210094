@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>BANA ULAŞIN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="Iletisim.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script>
+            function FormKontrol()
+            {   
+                var adi= document.getElementById("ad").value;
+                var soyadi= document.getElementById("soyad").value;
+                var mail= document.getElementById("mail").value;
+                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                
+                if(reg.test(mail) ==false)
+                {
+                    alert("Lütfen geçerli bir e-posta adresi giriniz.");
+                }
+                else if(mail=="")
+                {
+                     alert("Lütfen bir mail adresi giriniz.");
+                } 
+                else if(adi=="")
+                {
+                    alert("Lütfen adınızı giriniz.");
+                }       
+                else if(soyadi=="")
+                {
+                    alert("Lütfen soyadınızı giriniz.");
+                }
+                else if(mesaj=="")
+                {
+                    alert("Lütfen mesajınızı giriniz.");
+                }
+
+                else
+                {
+                    document.writeln("Mesajınız alınmıştır."+ "<br>" + mail+"<br>"+adi+" "+soyadi);
+                }
+            }
+    </script>
+   
+</head>
+
+ <body >
+  <nav >
+     
+    <label class="logo" for="">WEB-PROJE</label>
+    <ul>
+      <li><a class="active" href="index.html">Ana Sayfa</a></li>
+      <li><a href="hakkımda.html">Hakkımda</a></li>
+      <li><a href="sehrim.html">Şehrim</a></li>
+      <li><a href="özgecmis.html">özgecmis</a></li>
+      <li><a href="mirasım.html">Mirasımız</a></li>
+      <li><a href="ilgilialanlar.html">İlgili Alanlarım</a></li>
+      <li><a href="Iletisim.html">İletişim</a></li>
+      <li><a href="Giris.html">Giris yap</a></li>
+    </ul>
+  </nav>
+      
+    
+    
+    <div class=" iletisim">
+        <p>BANA ULAŞIN..</p>
+    <form>
+        <table >
+            <tr>
+                <td> AD :</td>
+                <td><input type="text" id="ad" ></td>
+            </tr>
+            <tr>
+                <td>SOYAD:</td>
+                <td><input type="text" id="soyad" ></td>
+            </tr>
+            <tr>
+                <td>CİNSİYET:</td>
+                <td colspan="2">
+                    <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+                    <label for="kadin">Kadın</label>
+                    <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+                    <label for="erkek">Erkek</label>
+                    <input type="radio" id="diger" name="cinsiyet" value="diger">
+                    <label for="other">Belirtmek istemiyorum</label>
+                </td>
+            </tr>
+            <tr>
+                <td>YAŞ:</td>
+                <td ><input sytle="width: 100; height: 20;"  type="number" id="yas" min="5"></td>
+            </tr>
+ 
+            <tr>
+                <td>MAİL:</td>
+                <td><input type="email" id="mail"></td>
+            </tr>
+            
+            <td> MESAJINIZ :</td>
+                <td><textarea id="mesaj"></textarea></td>
+ 
+            <tr>
+                <td colspan="2">
+                    <input type="button" name="kaydet" id="kaydet" value="KAYDET" onclick="FormKontrol()"   >
+                    <input type="reset" name="sil" id="sil" value="TEMİZLE">
+                </td>
+            </tr>        
+        </table>    
+    </form><br>
+
+    <div class="container-fluid sosyal">
+        <a href="https://www.instagram.com/oymn.emirhn/"><img title="oymn.emirhn" src="instagram.svg" width="50" height="50"></a> 
+        <a href="https://www.linkedin.com/in/emirhan-oyman-2ab691211"><img title="" src="linkedin.jpg" width="50" height="50"></a>
+        <a href="#"><img title="oymanemirhan47@gmail.com" src="gmail.svg" width="70" height="50"></a>
+        <a href="https://github.com/emirha47/g201210094"><img title="" src="github.png" width="50" height="50"></a>
+   </div><br>
+</div>
+
+     
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+ 
+</body>
+ 
+</html>
