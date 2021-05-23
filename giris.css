@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+font-family: 'Roboto', sans-serif;
+}
+
+nav {
+background: rgba(88, 238, 200, 0.685) ;
+height: 60px;
+width: 100%;
+}
+label.logo {
+    color: white;
+    font-size: 18px;
+    line-height: 80px;
+   
+    font-weight: 800;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px 12px;
+    text-transform: uppercase ;
+}
+
+a.active, a:hover {
+    background-color:rgb(255, 102, 0); 
+    color: black;
+    opacity: 0.5;
+}
+
+body
+{
+    background: rgba(88, 238, 200, 0.685);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.container-fluid{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    background:rgba(88, 238, 200, 0.685);
+    height: 60px;
+
+}
+.cizen{
+    border: none;
+    border-top: 5px solid blue ;
+    color: blue;
+    border-radius: 5px;
+   
+    text-align: center;
+}
+.form{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Oswald', sans-serif;
+    background:rgba(243, 99, 55, 0.685);
+    height: 150vh;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.form .login {
+   
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    
+}
+.form .login:hover {
+   background: red;
+    
+    
+    opacity: 0.7;
+
+}
+@media screen and (min-width:900px)
+{
+    form{
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        background: rgba(88, 238, 200, 0.685);
+        height: 50vh;
+        
+    
+    }
+table
+{
+   
+    background: rgba(88, 238, 200, 0.685);
+    font-size: 25px;
+    color: black;
+    margin-top: 200px;
+    margin-left: 400px;
+    
+}
+ul
+{
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+}
+li 
+{
+    float: left;
+}
+li a 
+{
+    display: block;
+    padding:12px 16px;
+    color:black;
+    text-decoration:none; 
+}
+
+.ustmenu
+{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10;
+    margin-left: 10;
+}
+}
+@media screen and (max-width:900px)
+{
+    table
+    {
+    font-size: 25px;
+    color: black;
+    margin:20% auto;
+    }
+    ul
+    {
+        list-style-type: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    li a 
+    {
+        display: block;
+        padding:12px 16px;
+        color: black;
+        text-decoration:none; 
+    }
+    li a:hover
+    {
+        background-color:#ffffff; 
+        color: #000000;
+        opacity: 0.5;
+    }
+    .ustmenu
+    {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    
+}
